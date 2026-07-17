@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mia Music Studio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap');
+:root{
+  --primary:#533afd; --brand-dark:#1c1e54; --ink:#0d253d; --muted:#5b6472;
+  --bg:#f6f0e2; --card:#fff; --hairline:#e7ddc8;
+  --shadow:0 1px 3px rgba(0,55,112,.08); --shadow-2:0 10px 30px rgba(0,55,112,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{text-decoration:none;color:inherit}
+
+.hero{color:#fff;position:relative;overflow:hidden;text-align:center;
+  padding:64px 20px 84px;
+  background:linear-gradient(135deg,#12143c 0%,#22246e 55%,#3a2fae 100%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='300' viewBox='0 0 1200 300' preserveAspectRatio='xMidYMid slice'><defs><radialGradient id='gl' cx='0.72' cy='0.12' r='0.6'><stop offset='0' stop-color='%237fb4ff' stop-opacity='0.14'/><stop offset='1' stop-color='%237fb4ff' stop-opacity='0'/></radialGradient><radialGradient id='vg' cx='0.42' cy='0.42' r='0.9'><stop offset='0.55' stop-color='%23070926' stop-opacity='0'/><stop offset='1' stop-color='%23070926' stop-opacity='0.42'/></radialGradient><linearGradient id='wk' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%236b72b8'/><stop offset='0.4' stop-color='%23bcc2ea'/><stop offset='0.72' stop-color='%23eef0ff'/><stop offset='1' stop-color='%23f7f8ff'/></linearGradient><linearGradient id='bk' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2304050d'/><stop offset='0.16' stop-color='%233a4170'/><stop offset='0.4' stop-color='%230b0d24'/><stop offset='1' stop-color='%2304050d'/></linearGradient><linearGradient id='amb' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%230a0c2e' stop-opacity='0.6'/><stop offset='0.55' stop-color='%230a0c2e' stop-opacity='0.15'/><stop offset='1' stop-color='%230a0c2e' stop-opacity='0'/></linearGradient><linearGradient id='fg' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='%23ffffff' stop-opacity='0'/><stop offset='0.5' stop-color='%23ffffff' stop-opacity='0.4'/><stop offset='1' stop-color='%23ffffff' stop-opacity='1'/></linearGradient><mask id='km'><rect x='560' y='-100' width='780' height='520' fill='url(%23fg)'/></mask></defs><rect width='1200' height='300' fill='url(%23gl)'/><g stroke='%23ffffff' stroke-opacity='0.10' stroke-width='1.8' transform='rotate(-5 260 150)'><line x1='20' y1='116' x2='580' y2='116'/><line x1='20' y1='133' x2='580' y2='133'/><line x1='20' y1='150' x2='580' y2='150'/><line x1='20' y1='167' x2='580' y2='167'/><line x1='20' y1='184' x2='580' y2='184'/></g><g fill='%23ffffff' fill-opacity='0.13' transform='rotate(-5 260 150)'><ellipse cx='110' cy='167' rx='12' ry='8.5' transform='rotate(-20 110 167)'/><rect x='120' y='113' width='3.4' height='56'/><ellipse cx='195' cy='150' rx='12' ry='8.5' transform='rotate(-20 195 150)'/><rect x='205' y='96' width='3.4' height='56'/><ellipse cx='280' cy='133' rx='12' ry='8.5' transform='rotate(-20 280 133)'/><rect x='290' y='79' width='3.4' height='56'/><ellipse cx='365' cy='150' rx='12' ry='8.5' transform='rotate(-20 365 150)'/><rect x='375' y='96' width='3.4' height='56'/><ellipse cx='450' cy='128' rx='12' ry='8.5' transform='rotate(-20 450 128)'/><rect x='460' y='74' width='3.4' height='56'/><ellipse cx='520' cy='150' rx='12' ry='8.5' transform='rotate(-20 520 150)'/><rect x='530' y='96' width='3.4' height='56'/></g><g transform='rotate(-24 1000 150)' mask='url(%23km)'><rect x='630' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='686' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='742' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='798' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='854' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='910' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='966' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='1022' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='1078' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='1134' y='-100' width='54' height='500' rx='5' fill='url(%23wk)'/><rect x='670' y='-100' width='30' height='280' rx='4' fill='url(%23bk)'/><rect x='726' y='-100' width='30' height='280' rx='4' fill='url(%23bk)'/><rect x='838' y='-100' width='30' height='280' rx='4' fill='url(%23bk)'/><rect x='894' y='-100' width='30' height='280' rx='4' fill='url(%23bk)'/><rect x='950' y='-100' width='30' height='280' rx='4' fill='url(%23bk)'/><rect x='1062' y='-100' width='30' height='280' rx='4' fill='url(%23bk)'/><rect x='1118' y='-100' width='30' height='280' rx='4' fill='url(%23bk)'/><rect x='600' y='-100' width='650' height='520' fill='url(%23amb)'/></g><rect width='1200' height='300' fill='url(%23vg)'/></svg>") center/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(40% 90% at 85% 10%,rgba(249,107,238,.20),transparent 65%),
+  radial-gradient(35% 80% at 12% 100%,rgba(255,209,102,.14),transparent 60%)}
+.hero .inner{position:relative;z-index:1;max-width:900px;margin:0 auto}
+.hero h1{font-size:2.4rem;font-weight:800;letter-spacing:-.6px;display:flex;align-items:center;justify-content:center;gap:14px}
+.hero h1::after{content:"";display:block;width:64px;height:5px;border-radius:3px;
+  background:linear-gradient(90deg,#ffd166,#f96bee);position:absolute;left:50%;bottom:-14px;transform:translateX(-50%)}
+.hero h1{position:relative;padding-bottom:0}
+.hero .mia{width:56px;height:70px;flex:none}
+.hero p{max-width:560px;margin:26px auto 0;color:rgba(255,255,255,.88);font-size:1.05rem}
+
+main{max-width:1000px;margin:0 auto;padding:0 20px 60px}
+.labs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:-40px;position:relative;z-index:2}
+.lab{background:var(--card);border:1px solid var(--hairline);border-radius:16px;box-shadow:var(--shadow-2);
+  padding:26px 24px;display:flex;flex-direction:column;transition:transform .14s,box-shadow .2s}
+.lab:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,55,112,.14)}
+.lab .ico{font-size:34px;line-height:1}
+.lab h2{margin:12px 0 2px;font-size:1.35rem;font-weight:800;color:var(--brand-dark)}
+.lab .tag{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--primary)}
+.lab p{margin:10px 0 20px;color:var(--muted);font-size:14px;flex:1}
+.lab .go{align-self:flex-start;font-weight:800;color:#fff;background:linear-gradient(135deg,#533afd,#665efd);
+  padding:11px 22px;border-radius:9999px;box-shadow:0 6px 18px rgba(83,58,253,.30)}
+.lab.soon{opacity:.72}
+.lab.soon .go{background:#c9c2ae;box-shadow:none;pointer-events:none}
+.foot{text-align:center;color:var(--muted);font-size:13.5px;margin-top:34px}
+.foot b{color:var(--ink)}
+@media(max-width:560px){ .hero h1{font-size:1.8rem} .labs{margin-top:24px} }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="inner">
+    <h1>
+      <svg class="mia" viewBox="10 8 100 126" aria-hidden="true"><g>
+        <path d="M34 92 Q28 60 32 40 Q38 14 60 14 Q82 14 88 40 Q92 60 86 92 Q82 98 78 94 L76 60 Q74 42 60 42 Q46 42 44 60 L42 94 Q38 98 34 92 Z" fill="#3A2B24"/>
+        <path d="M32 130 Q30 82 60 78 Q90 82 88 130 Z" fill="#EFCB4F"/>
+        <circle cx="60" cy="50" r="23" fill="#FFDCB8"/>
+        <path d="M38 52 Q34 20 60 18 Q86 20 82 52 Q80 34 66 30 Q56 28 48 34 Q40 40 38 52 Z" fill="#3A2B24"/>
+        <circle cx="51" cy="49" r="3" fill="#2B2B2B"/><circle cx="69" cy="49" r="3" fill="#2B2B2B"/>
+        <circle cx="51" cy="49" r="8.5" fill="none" stroke="#6b5340" stroke-width="2"/>
+        <circle cx="69" cy="49" r="8.5" fill="none" stroke="#6b5340" stroke-width="2"/>
+        <line x1="59.5" y1="49" x2="60.5" y2="49" stroke="#6b5340" stroke-width="2"/>
+        <path d="M53 61 Q60 67 67 61" fill="none" stroke="#a3542f" stroke-width="2.6" stroke-linecap="round"/>
+      </g></svg>
+      Mia Music Studio
+    </h1>
+    <p>Learn music by doing — with Mia, your guide. Choose a lab below, then sign in with the codes your instructor gives you.</p>
+  </div>
+</header>
+<main>
+  <div class="labs">
+    <a class="lab" href="https://miahlee90.github.io/mia-music-v2/">
+      <div class="ico">🎵</div>
+      <div class="tag">Music theory</div>
+      <h2>Theory Lab</h2>
+      <p>107 short interactive lessons in 15 units — play, listen, practice, and master one concept at a time.</p>
+      <span class="go">Enter →</span>
+    </a>
+    <a class="lab" href="https://miahlee90.github.io/mia-piano-lab/">
+      <div class="ico">🎹</div>
+      <div class="tag">Piano technique</div>
+      <h2>Piano Lab</h2>
+      <p>Five-finger patterns, scales, chords, inversions and arpeggios in every key — practice with a MIDI keyboard.</p>
+      <span class="go">Enter →</span>
+    </a>
+    <div class="lab soon">
+      <div class="ico">🎧</div>
+      <div class="tag">Ear training</div>
+      <h2>Aural Lab</h2>
+      <p>Sight-singing and ear training. Coming soon.</p>
+      <span class="go">Coming soon</span>
+    </div>
+  </div>
+  <p class="foot"><b>Students:</b> pick your lab, then use <b>Student sign-in</b> / <b>My progress</b> with your codes.<br>
+     <b>Instructors:</b> open a lab and use <b>Instructor sign-in</b> with your approved email.</p>
+</main>
+</body>
+</html>
