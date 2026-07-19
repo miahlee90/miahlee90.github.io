@@ -46,7 +46,7 @@ main{max-width:1020px;margin:0 auto;padding:34px 24px 40px}
 .pick{text-align:center;color:var(--brand-dark);font-weight:800;font-size:1.5rem;letter-spacing:-.3px}
 .pick::after{content:"";display:block;width:56px;height:5px;border-radius:3px;
   background:linear-gradient(90deg,var(--gold),var(--pink));margin:12px auto 0}
-.labs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:24px}
+.labs{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:22px;margin-top:24px}
 .lab{background:var(--card);border:1px solid var(--hairline);border-radius:18px;box-shadow:var(--shadow-2);
   padding:24px 26px 24px;display:flex;flex-direction:column;position:relative;overflow:hidden;
   transition:transform .14s,box-shadow .2s}
@@ -54,11 +54,13 @@ main{max-width:1020px;margin:0 auto;padding:34px 24px 40px}
 .lab.t1::before{background:linear-gradient(90deg,#533afd,var(--gold))}
 .lab.t2::before{background:linear-gradient(90deg,var(--pink),#533afd)}
 .lab.t3::before{background:linear-gradient(90deg,var(--sky),#533afd)}
+.lab.t4::before{background:linear-gradient(90deg,#e05252,var(--gold))}
 .lab:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(0,55,112,.16)}
 .lab .ico{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;
   font-size:28px;background:#f2effe}
 .lab.t2 .ico{background:#fdeffb}
 .lab.t3 .ico{background:#edf4ff}
+.lab.t4 .ico{background:#fdeeee}
 .lab .tag{margin-top:14px;font-size:11.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--primary)}
 .lab h2{margin:4px 0 0;font-size:1.4rem;font-weight:800;color:var(--brand-dark);letter-spacing:-.3px}
 .lab p{margin:8px 0 18px;color:var(--muted);font-size:14px;flex:1}
@@ -120,13 +122,29 @@ main{max-width:1020px;margin:0 auto;padding:34px 24px 40px}
       <p>Five-finger patterns, scales, chords, inversions and arpeggios in every key — practice with a MIDI keyboard.</p>
       <span class="go">Enter →</span>
     </a>
-    <div class="lab t3 soon">
+    <a class="lab t3" href="https://miahlee90.github.io/mia-aural-lab/">
       <div class="ico">🎧</div>
       <div class="tag">Ear training</div>
       <h2>Aural Lab</h2>
-      <p>Sight-singing and ear training. Coming soon.</p>
-      <span class="go">Coming soon</span>
-    </div>
+      <p>Listen. Sing. Read. Write. — beats, pitch, and durations trained by ear, one short lesson at a time.</p>
+      <span class="go">Enter →</span>
+    </a>
+    <a class="lab t4" href="https://miahlee90.github.io/mia-music-v2/games.html">
+      <div class="ico"><svg width="36" height="27" viewBox="-27 -20 56 42" aria-hidden="true"><g>
+        <path fill="#c23d4d" stroke="#a83345" stroke-width="1.2" d="M12 -1 L27 -10 L23 0 L27 8 Z"/>
+        <ellipse fill="#e05252" stroke="#b23a3a" stroke-width="1.6" cx="0" cy="0" rx="15" ry="12"/>
+        <path fill="#c23d4d" d="M-7 -10 Q-3 -17 3 -11 Q-1 -13 -3 -12 Q-5 -12 -7 -10 Z"/>
+        <ellipse fill="#ffe3c8" cx="-4" cy="4.5" rx="7.5" ry="5.5"/>
+        <path fill="#c23d4d" stroke="#a83345" stroke-width="1.2" d="M1 -3 Q13 -15 23 -7 Q15 3 3 4 Z"/>
+        <circle fill="#1c1e2e" cx="-8" cy="-4.5" r="2.7"/>
+        <circle fill="#fff" cx="-8.9" cy="-5.4" r="1"/>
+        <path fill="#E8A33D" stroke="#cf8f2e" stroke-width="1" d="M-14.5 -3 L-23 0 L-14.5 3.6 Z"/>
+      </g></svg></div>
+      <div class="tag">Music games</div>
+      <h2>Game Lab</h2>
+      <p>Note-reading arcade — fly the Note Bird through levels 1–10. Just for fun: no grades, and new games keep hatching.</p>
+      <span class="go">Enter →</span>
+    </a>
   </div>
   <p class="foot"><b>Students:</b> pick your lab, then use <b>Student sign-in</b> / <b>My progress</b> with your codes.<br>
      <b>Instructors:</b> open a lab and use <b>Instructor sign-in</b> with your approved email.</p>
