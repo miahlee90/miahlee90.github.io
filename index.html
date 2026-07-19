@@ -92,11 +92,9 @@ main{max-width:1020px;margin:0 auto;padding:34px 24px 40px}
 </head>
 <body>
 <header class="hero">
-  <div class="langbar" role="group" aria-label="Language">
-    <button type="button" data-lang="en">EN</button>
-    <button type="button" data-lang="es">ES</button>
-    <button type="button" data-lang="ko">한국어</button>
-  </div>
+  <!-- Language toggle hidden until the labs support ko/es too.
+       To re-enable: restore the .langbar buttons and switch the init line
+       at the bottom back to the saved-language version. -->
   <div class="inner">
     <div class="text">
       <h1>
@@ -222,9 +220,10 @@ function setLang(l){
 document.querySelectorAll('.langbar button').forEach(function(b){
   b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang')); });
 });
-var saved='en';
-try{saved=localStorage.getItem('mia_hub_lang')||'en';}catch(e){}
-setLang(saved);
+/* Toggle hidden: force English for everyone (labs are not localized yet).
+   Saved-language init, for when the toggle returns:
+   var saved='en'; try{saved=localStorage.getItem('mia_hub_lang')||'en';}catch(e){}; setLang(saved); */
+setLang('en');
 })();
 </script>
 </body>
