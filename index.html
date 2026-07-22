@@ -18,7 +18,9 @@ a{text-decoration:none;color:inherit}
 
 /* ===== hero: tall, vertically centered, artwork right ===== */
 .hero{color:#fff;position:relative;overflow:hidden;
-  min-height:36vh;display:flex;align-items:center;
+  /* one shared hero height across the hub and every lab front door — the
+     hero/content boundary sits at the same place on every page */
+  min-height:max(36vh,430px);display:flex;align-items:center;
   padding:44px 24px;
   background:linear-gradient(135deg,#12143c 0%,#22246e 55%,#3a2fae 100%)}
 .hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
